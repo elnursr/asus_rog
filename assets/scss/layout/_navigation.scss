@@ -1,0 +1,39 @@
+@use '../abstracts'as v;
+
+.navigation {
+    background-color: rgb(0, 0, 0);
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+    }
+
+    &__brand-logo {
+        width: 145px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__item {}
+
+    &__link {
+        display: block;
+        transition: color .3s;
+        color: white;
+
+        &:hover {
+            color: v.$rog_red;
+        }
+    }
+}
+
+.asus-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
