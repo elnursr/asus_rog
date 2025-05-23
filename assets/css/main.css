@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Cascadia Code";
+  font-family: "Montserrat";
 }
 
 .navigation {
@@ -27,34 +28,136 @@
 .navigation__brand-logo {
   width: 145px;
 }
-.navigation__items {
+.navigation__brand-logo img {
+  width: 100%;
+  height: 100%;
+}
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  gap: 45px;
 }
-.navigation__link {
+.navigation__list-link {
   display: block;
+  text-transform: uppercase;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
   color: white;
 }
-.navigation__link:hover {
+.navigation__list-link:hover {
   color: #f5192d;
 }
-
-.asus-logo {
+.navigation__item {
+  position: relative;
+  padding: 18px 0;
+}
+.navigation__item:hover .navigation__sub-menu {
+  display: block;
+}
+.navigation__sub-menu {
+  display: none;
+  position: absolute;
+  right: -145px;
+  top: 101%;
+  width: 18em;
+  padding: 25px;
+  background-color: #f3f3f3;
+}
+.navigation__sub-menu-item {
+  padding: 11px 0;
+}
+.navigation__sub-menu-link {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 555;
+  color: black;
+}
+.navigation__sub-menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #f5192d;
+}
+.navigation__sub-menu-link:hover {
+  color: #f5192d;
+}
+.navigation__sub-menu-link:hover::after {
+  width: 100%;
+}
+.navigation__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
 }
+.navigation__icon:first-child {
+  padding-right: 12px;
+  border-right: 0.7px solid #3d3d3d;
+}
+.navigation__icon:nth-child(2), .navigation__icon:nth-child(3) {
+  cursor: pointer;
+}
+.navigation__icon:last-child {
+  position: relative;
+}
+.navigation__icon:hover path[data-name=user],
+.navigation__icon:hover path[data-name=search] {
+  fill: #f5192d !important;
+}
+.navigation__icon path[data-name=user],
+.navigation__icon path[data-name=search] {
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+.navigation__user-menu {
+  position: absolute;
+  right: -135px;
+  top: 149%;
+  width: 18em;
+  padding: 21px;
+  background-color: #f3f3f3;
+}
+.navigation__user-menu-item {
+  padding: 5px 0;
+}
+.navigation__user-menu-link {
+  position: relative;
+  font-size: 0.8em;
+  font-weight: 555;
+  color: black;
+}
+.navigation__user-menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #f5192d;
+}
+.navigation__user-menu-link:hover {
+  color: #f5192d;
+}
+.navigation__user-menu-link:hover::after {
+  width: 100%;
+}
 
 .container {
-  width: 75%;
+  width: 81%;
   margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
