@@ -1,0 +1,13 @@
+@mixin sub-menu {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 55%;
+    top: 100%;
+    width: 17em;
+    padding: 12px 25px;
+    opacity: 0;
+    transition: opacity .5s, left .5s;
+    background-color: rgb(243, 243, 243);
+}

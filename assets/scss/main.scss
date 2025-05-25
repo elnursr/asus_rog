@@ -2,6 +2,10 @@
 
 @use 'layout/index';
 
+body {
+    overflow: hidden;
+}
+
 .container {
     width: 81%;
     margin: 0 auto;

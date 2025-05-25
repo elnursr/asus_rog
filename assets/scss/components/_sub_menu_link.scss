@@ -1,0 +1,27 @@
+@use '../abstracts'as v;
+
+@mixin sub_menu_link {
+    position: relative;
+    font-size: 0.9em;
+    font-weight: 555;
+    color: rgb(0, 0, 0);
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1.5px;
+        transition: width .5s;
+        background-color: v.$rog_red;
+    }
+
+    &:hover {
+        color: v.$rog_red;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
