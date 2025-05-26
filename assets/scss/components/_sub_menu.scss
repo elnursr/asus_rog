@@ -8,6 +8,7 @@
     width: 17em;
     padding: 12px 25px;
     opacity: 0;
+    z-index: 7;
     transition: opacity .5s, left .5s;
     background-color: rgb(243, 243, 243);
 }

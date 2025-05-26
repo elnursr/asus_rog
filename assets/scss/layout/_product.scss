@@ -1,0 +1,10 @@
+.product{
+    padding: 7em;
+    &__title{
+        text-align: center;
+    }
+}
+
+.products{
+    display: flex;
+}

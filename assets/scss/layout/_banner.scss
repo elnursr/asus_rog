@@ -1,0 +1,13 @@
+@use '../abstracts'as v;
+
+.banner {
+    text-align: center;
+    line-height: 2.5em;
+    background-color: v.$rog_red;
+
+    &__link {
+        display: inline-block;
+        font-size: .8em;
+        color: rgb(255, 255, 255);
+    }
+}

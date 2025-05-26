@@ -1,0 +1,16 @@
+@use '../abstracts'as v;
+
+.swiper {
+
+    &-button-prev,
+    &-button-next {
+        width: 25px;
+        height: 25px;
+        padding: 29px;
+        border-radius: 7px;
+        color: v.$rog_red;
+        background-color: rgba(41, 41, 41, 0.5);
+    }
+
+    &-button-next {}
+}

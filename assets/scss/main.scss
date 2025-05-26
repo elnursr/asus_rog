@@ -2,11 +2,15 @@
 
 @use 'layout/index';
 
+@use 'components/index' as c;
+
+@import '../vendors/swiper/css/swiper_min.css';
+
 body {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .container {
-    width: 81%;
+    width: 1141px;
     margin: 0 auto;
 }
