@@ -1,10 +1,8 @@
 @use 'base';
-
 @use 'layout/index';
+@use 'components/index'as c;
 
-@use 'components/index' as c;
 
-@import '../vendors/swiper/css/swiper_min.css';
 
 body {
     // overflow: hidden;

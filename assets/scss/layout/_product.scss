@@ -1,10 +1,60 @@
-.product{
-    padding: 7em;
-    &__title{
-        text-align: center;
-    }
-}
+@use '../abstracts'as v;
+@use '../components/index'as c;
 
-.products{
-    display: flex;
+
+.product {
+    // background-color: rgb(0, 0, 0);
+
+    &__heading {
+        text-align: center;
+        font-size: 2.9em;
+        margin: 25px 0;
+    }
+
+    &__title {
+        @include c.sub_menu_link;
+        text-transform: capitalize;
+        transition: transform .3s;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 17%;
+        padding: 12px;
+        border-radius: 7px;
+        transition: background-color .3s;
+        // border: 1px dotted v.$rog_red;
+
+        &:hover {
+            .product__image {
+                img {
+                    transform: scale(0.7);
+                }
+            }
+
+            .product__title {
+                transform: scale(1.5);
+            }
+
+            background-color: rgba(0, 0, 0, 0.274);
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image {
+        img {
+            object-fit: cover;
+            transition: transform .3s;
+        }
+    }
 }

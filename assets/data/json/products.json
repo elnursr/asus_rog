@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "title": "laptops",
+            "image_name": "laptops"
+        },
+        {
+            "title": "motherboards",
+            "image_name": "motherboards"
+        },
+        {
+            "title": "graphic cards",
+            "image_name": "graphics_cards"
+        },
+        {
+            "title": "monitors",
+            "image_name": "monitors"
+        },
+        {
+            "title": "phones",
+            "image_name": "phones"
+        },
+        {
+            "title": "cooling",
+            "image_name": "cooling"
+        },
+        {
+            "title": "desktops",
+            "image_name": "desktops"
+        },
+        {
+            "title": "power supply units",
+            "image_name": "power_supply_units"
+        },
+        {
+            "title": "external graphic docks",
+            "image_name": "external_graphic_docks"
+        },
+        {
+            "title": "networking",
+            "image_name": "networking"
+        },
+        {
+            "title": "keyboards",
+            "image_name": "keyboards"
+        },
+        {
+            "title": "mice & mouse pads",
+            "image_name": "mice_&_mouse_pads"
+        },
+        {
+            "title": "headsets & audio",
+            "image_name": "headsets_&_audio"
+        },
+        {
+            "title": "cases",
+            "image_name": "cases"
+        },
+        {
+            "title": "apparel bags & gear",
+            "image_name": "apparel_bags_&_gear"
+        },
+        {
+            "title": "streaming kits",
+            "image_name": "streaming_kits"
+        },
+        {
+            "title": "controllers",
+            "image_name": "controllers"
+        },
+        {
+            "title": "storage",
+            "image_name": "storage"
+        },
+        {
+            "title": "power & protection gadgets",
+            "image_name": "power_&_protection_gadgets"
+        },
+        {
+            "title": "gaming handhelds",
+            "image_name": "gaming_handhelds"
+        }
+    ]
+}

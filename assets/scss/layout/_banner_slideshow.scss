@@ -1,5 +1,7 @@
 .banner-slideshow {
     &__link {
+        display: block;
+
         img {
             object-fit: cover;
             width: 100%;

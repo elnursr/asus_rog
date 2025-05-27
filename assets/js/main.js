@@ -1,32 +1,37 @@
-// import  Swiper  from '../vendors/swiper/js/swiper_min.js';
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+let sliderWrapper = document.querySelector('.slider-wrapper'),
+    sliderLinkImages = document.querySelectorAll('.slider__link img'),
+    sliderItem = document.querySelectorAll('.slider__item');
 
-
-const bannerSwiper = new Swiper('.bannerSwiper', {
-    autoplay: {
-        delay: 3555,
-        disableOnInteraction: true
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    direction: 'horizontal',
-    slidesPerView: 1,
-    loop: true,
+sliderWrapper.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target.parentElement.parentElement.getAttribute('class').split(' ')[1] === 'active') {
+        e.target.parentElement.parentElement.setAttribute('class', 'slider__item');
+        if (e.target.parentElement.parentElement.dataset.lastSlide === 'lastImage') {
+            return e.currentTarget.firstElementChild.children[0].setAttribute('class', 'slider__item active');
+        }
+        e.target.parentElement.parentElement.nextElementSibling.setAttribute('class', 'slider__item active');
+    }
 });
 
-// const productSwiper = new Swiper('.productSwiper', {
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev"
-//     },
-//      autoplay: {
-//         delay: 3555,
-//         disableOnInteraction: true
-//     },
-//     direction: 'horizontal',
-//     // loop: true,
-//     slidesPerView: 5,
-//     spaceBetween: 9,
-// });
+let url = '../assets/data/json/products.json';
+
+let productList = document.querySelector('.product__list');
+
+fetch(url)
+    .then(res => res.json())
+    .then(({ products }) => {
+        products.forEach(product => {
+
+            productList.innerHTML +=
+                `
+                    <li class="product__item swiper-slide">
+                        <a href="https://rog.asus.com/${product.image_name.replace(/_/g, '-').replace(/&/g, '').replace(/--+/g, '-')}-group" class="product__link" target="_blank">
+                            <div class="product__image">
+                                <img src="assets/media/products/${product.image_name}.png" alt="${product.image_name}">
+                            </div>
+                            <h3 class="product__title">${product.title}</h3>
+                        </a>
+                    </li>
+                `;
+        });
+    })
