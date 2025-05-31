@@ -24,7 +24,7 @@ fetch(url)
 
             productList.innerHTML +=
                 `
-                    <li class="product__item swiper-slide">
+                    <li class="product__item">
                         <a href="https://rog.asus.com/${product.image_name.replace(/_/g, '-').replace(/&/g, '').replace(/--+/g, '-')}-group" class="product__link" target="_blank">
                             <div class="product__image">
                                 <img src="assets/media/products/${product.image_name}.png" alt="${product.image_name}">
