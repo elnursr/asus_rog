@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -263,6 +264,9 @@
   width: 100%;
 }
 
+.footer {
+  background-color: rgb(0, 0, 0);
+}
 .footer__story {
   position: relative;
   display: -webkit-box;
@@ -280,11 +284,12 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
 .footer__story-content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,6 +302,7 @@
           justify-content: center;
   width: 41.7%;
   padding: 3em;
+  z-index: 3;
   color: rgb(255, 255, 255);
 }
 .footer__story-title {
@@ -308,6 +314,159 @@
 .footer__story-description {
   font-size: 1.1em;
   line-height: 1.2em;
+}
+.footer__sitemap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 17px 0;
+}
+.footer__navigation, .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+.footer__navigation {
+  padding: 12px 0;
+}
+.footer__navigation-link {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 555;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 395;
+  font-size: 1.1em;
+  color: rgb(179, 179, 179);
+}
+.footer__navigation-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: rgb(205, 1, 15);
+}
+.footer__navigation-link:hover {
+  color: rgb(205, 1, 15);
+}
+.footer__navigation-link:hover::after {
+  width: 100%;
+}
+.footer__social-item {
+  margin: 0 7px;
+}
+.footer__social-link:hover .fa-brands {
+  color: rgb(205, 1, 15);
+}
+.footer__social-link .fa-brands {
+  font-size: 1.3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: rgb(179, 179, 179);
+}
+.footer__form {
+  width: 355px;
+}
+.footer__form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 9px;
+}
+.footer__form-input {
+  width: 93%;
+  padding: 7px;
+  font-size: 1.1em;
+  border: 1px solid rgb(125, 125, 125);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+.footer__form-input::-webkit-input-placeholder {
+  color: rgb(179, 179, 179);
+}
+.footer__form-input::-moz-placeholder {
+  color: rgb(179, 179, 179);
+}
+.footer__form-input:-ms-input-placeholder {
+  color: rgb(179, 179, 179);
+}
+.footer__form-input::-ms-input-placeholder {
+  color: rgb(179, 179, 179);
+}
+.footer__form-input::placeholder {
+  color: rgb(179, 179, 179);
+}
+.footer__form-input:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+.footer__form-button {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  text-transform: uppercase;
+  width: 33%;
+  padding: 9px;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(205, 1, 15);
+}
+.footer__form-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+.footer__form-button:hover::after {
+  width: 100%;
+}
+.footer__form-button-title {
+  position: relative;
+  z-index: 3;
+}
+.footer__form-label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 555;
+  font-size: 0.8em;
+  padding: 12px 0;
+  color: rgb(179, 179, 179);
+}
+.footer__line {
+  position: relative;
+  height: 2.7px;
+  background-color: rgb(77, 77, 77);
+}
+.footer__line::before, .footer__line::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 3px;
+  background-color: rgb(77, 77, 77);
+}
+.footer__line::before {
+  top: -7px;
+  left: 0;
+  clip-path: polygon(58% 0, 100% 100%, 0 100%, 0 0);
+}
+.footer__line::after {
+  bottom: -7px;
+  right: 0;
 }
 
 .banner {
@@ -417,7 +576,7 @@
 }
 
 .container {
-  width: 1141px;
+  width: 1321px;
   margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

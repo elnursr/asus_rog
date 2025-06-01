@@ -25,11 +25,11 @@ fetch(url)
             productList.innerHTML +=
                 `
                     <li class="product__item">
-                        <a href="https://rog.asus.com/${product.image_name.replace(/_/g, '-').replace(/&/g, '').replace(/--+/g, '-')}-group" class="product__link" target="_blank">
+                        <a href="https://rog.asus.com/${product.title.replace(/_/g, '-').replace(/&/g, '').replace(/--+/g, '-')}-group" class="product__link" target="_blank">
                             <div class="product__image">
-                                <img src="assets/media/products/${product.image_name}.png" alt="${product.image_name}">
+                                <img src="assets/media/products/${product.title}.png" alt="${product.image_name}">
                             </div>
-                            <h3 class="product__title">${product.title}</h3>
+                            <h3 class="product__title">${product.title.replace(/_/g, ' ')}</h3>
                         </a>
                     </li>
                 `;

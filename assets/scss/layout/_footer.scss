@@ -1,4 +1,9 @@
+@use '../abstracts'as v;
+@use '../components'as c;
+
 .footer {
+    background-color: rgb(0, 0, 0);
+
     &__story {
         position: relative;
         display: flex;
@@ -12,18 +17,20 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                z-index: -1;
+                z-index: 1;
                 width: 100%;
                 height: 100%;
             }
         }
 
         &-content {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 41.7%;
             padding: 3em;
+            z-index: 3;
             color: rgb(255, 255, 255);
 
         }
@@ -38,6 +45,146 @@
         &-description {
             font-size: 1.1em;
             line-height: 1.2em;
+        }
+    }
+
+    &__sitemap {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 0;
+    }
+
+    &__navigation,
+    &__social {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__navigation {
+        padding: 12px 0;
+
+        &-link {
+            @include c.sub_menu_link;
+            text-transform: uppercase;
+            font-weight: 395;
+            font-size: 1.1em;
+            color: rgb(179, 179, 179);
+        }
+    }
+
+    &__social {
+        &-item {
+            margin: 0 7px;
+        }
+
+        &-link {
+            &:hover {
+                .fa-brands {
+                    color: v.$rog_red;
+                }
+            }
+
+            .fa-brands {
+                font-size: 1.3em;
+                transition: color .3s;
+                color: rgb(179, 179, 179);
+            }
+        }
+    }
+
+    &__form {
+        width: 355px;
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 9px;
+        }
+
+        &-input {
+            width: 93%;
+            padding: 7px;
+            font-size: 1.1em;
+            border: 1px solid rgb(125, 125, 125);
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+
+            &::placeholder {
+                color: rgb(179, 179, 179);
+            }
+
+            &:focus {
+                border: 1px solid rgb(255, 255, 255);
+            }
+        }
+
+        &-button {
+            cursor: pointer;
+            position: relative;
+            border: none;
+            text-transform: uppercase;
+            width: 33%;
+            padding: 9px;
+            font-size: 1em;
+            color: rgb(255, 255, 255);
+            background-color: v.$rog_red;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                transition: width .3s;
+                background-color: rgba(0, 0, 0, .29);
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &-title {
+                position: relative;
+                z-index: 3;
+            }
+        }
+
+        &-label {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 555;
+            font-size: .8em;
+            padding: 12px 0;
+            color: rgb(179, 179, 179);
+        }
+    }
+
+    &__line {
+        position: relative;
+        height: 2.7px;
+        background-color: rgb(77, 77, 77);
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 5%;
+            height: 3px;
+            background-color: rgb(77, 77, 77);
+        }
+
+        &::before {
+            top: -7px;
+            left: 0;
+            clip-path: polygon(58% 0, 100% 100%, 0 100%, 0 0);
+        }
+
+        &::after {
+            bottom: -7px;
+            right: 0;
         }
     }
 }
