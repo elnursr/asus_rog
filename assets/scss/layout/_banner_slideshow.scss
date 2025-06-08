@@ -1,6 +1,8 @@
 .banner-slideshow {
     &__link {
+        overflow: hidden;
         display: block;
+        height: 732px;
 
         img {
             object-fit: cover;

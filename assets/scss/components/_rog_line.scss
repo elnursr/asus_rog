@@ -1,0 +1,27 @@
+@mixin rog_line {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 5%;
+        height: 100%;
+        bottom: 0;
+    }
+
+    &::before {
+        top: -7px;
+        left: 0;
+        border-bottom: 7px solid rgb(77, 77, 77);
+        border-right: 12px solid transparent;
+    }
+
+    &::after {
+        bottom: -7px;
+        right: 0;
+        border-top: 7px solid rgb(77, 77, 77);
+        border-left: 12px solid transparent;
+
+    }
+}

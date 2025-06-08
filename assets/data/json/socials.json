@@ -1,0 +1,32 @@
+{
+    "socials": [
+        {
+            "className": "fa-facebook-f",
+            "url": "https://www.facebook.com/ASUSROG"
+        },
+        {
+            "className": "fa-x-twitter",
+            "url": "https://x.com/ASUS_ROG"
+        },
+        {
+            "className": "fa-discord",
+            "url": "https://discord.com/invite/Sxv2XBpSRc"
+        },
+        {
+            "className": "fa-youtube",
+            "url": "https://www.youtube.com/channel/UCAaMgASV4htjw3KNqh_vQvA"
+        },
+        {
+            "className": "fa-instagram",
+            "url": "https://www.instagram.com/ASUSROG/"
+        },
+        {
+            "className": "fa-tiktok",
+            "url": "https://www.tiktok.com/@_asusrog"
+        },
+        {
+            "className": "fa-threads",
+            "url": "https://www.threads.com/@asusrog"
+        }
+    ]
+}

@@ -82,6 +82,7 @@
 
         &-link {
             @include c.sub_menu_link;
+            color: rgb(0, 0, 0);
         }
     }
 
@@ -92,6 +93,7 @@
 
         &-link {
             @include c.sub_menu_link;
+            color: rgb(0, 0, 0);
         }
     }
 
@@ -149,6 +151,7 @@
 
         &-link {
             @include c.sub_menu_link;
+            color: rgb(0, 0, 0);
         }
     }
 }

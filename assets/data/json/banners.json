@@ -1,0 +1,28 @@
+{
+    "banners": [
+        {
+            "image_name": "best_oled_gaming_monitor",
+            "url": "https://rog.asus.com/content/best-oled-gaming-monitor/"
+        },
+        {
+            "image_name": "2025_rog_gaming_laptops",
+            "url": "https://rog.asus.com/content/2025-rog-gaming-laptops/"
+        },
+        {
+            "image_name": "graphic_cards",
+            "url": "https://www.asus.com/microsite/Graphics-Cards/GeForce-RTX-50-Series/"
+        },
+        {
+            "image_name": "rog_ryuo_iv_slc_360_argb",
+            "url": "https://rog.asus.com/cooling/cpu-liquid-coolers/rog-ryuo/rog-ryuo-iv-slc-360-argb/"
+        },
+        {
+            "image_name": "rog_nuc_2025",
+            "url": "https://rog.asus.com/desktops/mini-pc/rog-nuc-2025/"
+        },
+        {
+            "image_name": "rog_phone",
+            "url": "https://rog.asus.com/event/rog-phone/"
+        }
+    ]
+}
