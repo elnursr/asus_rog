@@ -185,11 +185,20 @@
         display: flex;
         gap: 0 7px;
 
-        &-link {
-            @include c.sub_menu_link;
+        &-link,
+        &-text {
             text-transform: uppercase;
             color: rgb(179, 179, 179);
         }
+
+        &-link {
+            @include c.sub_menu_link;
+        }
+
+        &-text {
+            font-size: 0.9em;
+        }
+
     }
 
     &__logo {

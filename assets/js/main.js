@@ -15,11 +15,13 @@ sliderWrapper.addEventListener('click', function (e) {
 
 let productsUrl = '../assets/data/json/products.json',
     bannersUrl = '../assets/data/json/banners.json',
-    socialsUrl = '../assets/data/json/socials.json';
+    socialsUrl = '../assets/data/json/socials.json',
+    regionsUrl = '../assets/data/json/regions.json';
 
 let productList = document.querySelector('.product__list'),
     footerSocial = document.querySelector('.footer__social'),
-    bannerSlideshow = document.querySelector('.banner-slideshow');
+    bannerSlideshow = document.querySelector('.banner-slideshow'),
+    languageModalRegions = document.querySelector('.language-modal__regions');
 
 fetch(productsUrl)
     .then(res => res.json())
@@ -94,4 +96,22 @@ fetch(bannersUrl)
                 `;
             }
         }
+    })
+
+fetch(regionsUrl)
+    .then(res => res.json())
+    .then(({ regions }) => {
+        
+        regions.forEach(({ title, languages }) => {
+
+            languageModalRegions.innerHTML +=
+                `
+                    <li class="anguage-modal__regions-item">
+                        <h1 class="language-modal__regions-title">${title} region</h1>
+                    </li>
+                    <li class="anguage-modal__regions-item">
+                        <a href="" class="anguage-modal__regions-link">${languages}</a>
+                    </li>
+                `;
+        });
     })

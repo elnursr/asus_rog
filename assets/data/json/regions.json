@@ -1,0 +1,103 @@
+{
+    "regions": [
+        {
+            "title": "america",
+            "languages": [
+                "argentina / español",
+                "brazil / português",
+                "canada / english",
+                "canada / français",
+                "chile / español",
+                "colombia / español",
+                "ecuador / español",
+                "latin spanish / español",
+                "mexico / español",
+                "paraguay / español",
+                "peru / español",
+                "united states / english",
+                "uruguay / english"
+            ]
+        },
+        {
+            "title": "asia pacific",
+            "languages": [
+                "australia / english",
+                "bangladesh / english",
+                "brunei darussalam / english",
+                "cambodia / english",
+                "china / 简体中文",
+                "hong kong / english",
+                "hong kong / 繁體中文",
+                "india / english",
+                "indonesia / bahasa indonesia",
+                "japan / 日本語",
+                "korea / 한국인",
+                "malaysia / english",
+                "mongolia / english",
+                "myanmar / မြန်မာ",
+                "nepal / english",
+                "new zealand / english",
+                "pakistan / english",
+                "philippines / english",
+                "singapore / english",
+                "sri lanka / english",
+                "taiwan / 繁體中文",
+                "thailand / แบบไทย",
+                "vietnam / việt nam"
+            ]
+        },
+        {
+            "title": "europe",
+            "languages": [
+                "baltics / english",
+                "belgium / français",
+                "belgium / nederlands",
+                "bulgaria / english",
+                "cis / русский",
+                "croatia / croatian",
+                "czech republic / čeština",
+                "denmark / dansk",
+                "finland / suomi",
+                "france / français",
+                "germany / deutsch",
+                "greece / english",
+                "greece / greek",
+                "hungary / magyar",
+                "italy / italiano",
+                "netherlands / nederlands",
+                "norway / norwegian",
+                "poland / polski",
+                "portugal / português",
+                "romania / românia",
+                "serbia / english",
+                "serbia / српски",
+                "slovakia / slovensko",
+                "slovenia / slovenian",
+                "spain / español",
+                "sweden / svenska",
+                "switzerland / deutsch",
+                "switzerland / english",
+                "switzerland / français",
+                "türkiye / türkçe",
+                "ukraine / українська",
+                "united kingdom / english"
+            ]
+        },
+        {
+            "title": "africa & middle east",
+            "languages": [
+                "east africa / english",
+                "egypt / english",
+                "egypt / عربي",
+                "israel / עִברִית",
+                "middle east / english",
+                "middle east / عربي",
+                "north africa / عربي",
+                "saudia arabia / english",
+                "saudia arabia / عربي",
+                "south africa / english",
+                "west africa / english"
+            ]
+        }
+    ]
+}

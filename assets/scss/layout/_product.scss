@@ -9,7 +9,37 @@
         text-align: center;
         font-size: 2.9em;
         margin: 25px 0;
-        @include c.rog_line;
+
+        &-text {
+            @include c.rog_line;
+            display: inline-block;
+
+            &::before,
+            &::after {
+                width: 45%;
+            }
+
+            &:hover {
+
+                &::before,
+                &::after {
+                    width: 5%;
+                }
+
+                &::before {
+                    border-bottom: 7px solid v.$rog_red;
+                }
+
+                &::after {
+                    border-top: 7px solid v.$rog_red;
+                }
+            }
+
+            &::after,
+            &::before {
+                transition: width .3s;
+            }
+        }
     }
 
     &__title {
