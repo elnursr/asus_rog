@@ -139,7 +139,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
@@ -165,7 +165,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
@@ -252,7 +252,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
@@ -348,7 +348,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
@@ -477,28 +477,28 @@
           justify-content: space-between;
   padding: 25px 0;
 }
-.footer__language-selector {
+.footer__region-selector {
   position: relative;
   font-size: 0.9em;
   font-weight: 555;
   font-weight: 355;
   color: #b3b3b3;
 }
-.footer__language-selector::after {
+.footer__region-selector::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
 }
-.footer__language-selector:hover {
+.footer__region-selector:hover {
   color: #cd010f;
 }
-.footer__language-selector:hover::after {
+.footer__region-selector:hover::after {
   width: 100%;
 }
 .footer__bottom-navigation {
@@ -522,7 +522,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
@@ -635,7 +635,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1.5px;
+  height: 1px;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   background-color: #cd010f;
