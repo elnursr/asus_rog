@@ -1,6 +1,6 @@
 @use 'base';
-@use 'layout/index';
-@use 'components/index'as c;
+@use 'layout';
+@use 'components'as c;
 
 .container {
     width: 1321px;
